@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MathWiseConsulting</title>
+    <link rel="stylesheet" href="alltopics.css">
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="headerlogo">
+            <h2>MWC</h2>
+            <P>
+                Math <br>
+                Wise <br>
+                Consulting
+            </P>
+        </div>
+        <div class="headernav">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="alltopics.html">Темы</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">О нас</a>
+                </li>
+                <li>
+                    <a href="documentation.html">Документы</a>
+                </li>
+            </ul>
+        </div>
+        <div class="headerright">
+            <p>
+                +996 (999) 888-777
+            </p>
+        </div>
+    </div>
+</header>
+<section>
+
+    <h1>Whole Topics</h1>
+
+    <button class="accordion">Topics for 8 grade</button>
+    <div class="panel">
+        <div class="alltopics">
+            <div class="topics">
+                <ul>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/whole-numbers" target="_blank">Chapter 1: Whole numbers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/integers" target="_blank">Chapter 2: Integers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/fractions" target="_blank">Chapter 3: Fractions</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/the-decimal-notation-for-fractions" target="_blank">Chapter 4: The decimal notation for fractions</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/exponents" target="_blank">Chapter 5: Exponents</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/patterns" target="_blank">Chapter 6: Patterns</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/functions-and-relationships" target="_blank">Chapter 7: Functions and relationships</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="topics">
+                <ul>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/algebraic-expressions" target="_blank">Chapter 8: Algebraic expressions</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/equations" target="_blank">Chapter 9: Equations</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/construction-of-geometric-figures" target="_blank">Chapter 10: Construction of geometric figures</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/geometry-of-2d-shapes" target="_blank">Chapter 11: Geometry of 2d shapes</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/geometry-of-straight-lines" target="_blank">Chapter 12: Geometry of straight lines</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/pythagoras-theorem" target="_blank">Chapter 13: Pythagoras' theorem</a>
+                    </li>
+                    <li>
+                        <a href="https://www.siyavula.com/read/za/mathematics/grade-9/area-and-perimeter-of-2d-shapes" target="_blank">Chapter 14: Area and perimeter of 2d shapes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <button class="accordion">Topics for 9 grades</button>
+    <div class="panel">
+        <div class="alltopics1">
+            <div class="topics1">
+                <ul>
+                    <li>
+                        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-numbers-operations" target="_blank"> Numbers and operations</a>
+                    </li>
+                    <li>
+                        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-solving-equations" target="_blank">Solving equations with one unknown</a>
+                    </li>
+                    <li>
+                        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-linear-equations-functions" target="_blank">Linear equations and functions</a>
+                    </li>
+                    <li>
+                        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-systems-topic" target="_blank">Systems of equations</a>
+                    </li>
+                    <li>
+                        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry" target="_blank"> Geometry</a>
+                    </li>
+                    <li>
+                        <a href="https://www.khanacademy.org/math/cc-eighth-grade-math/geometric-transformations" target="_blank">Geometric transformations</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let acc = document.getElementsByClassName("accordion");
+        let i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                let panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</section>
+<footer>
+    <div class="footer">
+        <div class="footerleft">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="alltopics.html">Темы</a>
+                </li>
+                <li>
+                    <a href="aboutus.html">О нас</a>
+                </li>
+                <li>
+                    <a href="documentation.html">Документы</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footerright">
+            <p>
+                2024 © MWC Service Group
+            </p>
+            <div class="footerimg">
+
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                A, commodi explicabo maiores nisi optio praesentium <br>
+                reprehenderit unde voluptates?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+                A, commodi explicabo maiores nisi optio praesentium <br>
+                reprehenderit unde voluptates?
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
